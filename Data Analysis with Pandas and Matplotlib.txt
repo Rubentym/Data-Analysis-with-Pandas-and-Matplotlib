@@ -1,0 +1,11 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+data = {'Year': [2010, 2011, 2012, 2013, 2014],
+        'Sales': [100, 150, 200, 250, 300]}
+df = pd.DataFrame(data)
+plt.plot(df['Year'], df['Sales'])
+plt.xlabel('Year')
+plt.ylabel('Sales')
+plt.title('Sales Over Years')
+plt.show()
